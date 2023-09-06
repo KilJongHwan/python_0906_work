@@ -27,4 +27,15 @@ print("Name : " + name)
 print("Age : " + str(age))
 print("Address : " + addr)
 
+# 출력 시 정렬
+# < 좌측 정렬
+# > 우측 정렬, 생략 가능
+# ^ 중앙 정렬
+print("|{:5}|".format(10))
+print("|{:<5}|".format(10))
+print("|{:^6}|".format(10))
 
+num = 10
+print(f"|{num:>5}|")
+print(f"|{num:<5}|")
+print(f"|{num:^6}|")
