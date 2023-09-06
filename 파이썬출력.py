@@ -39,3 +39,5 @@ num = 10
 print(f"|{num:>5}|")
 print(f"|{num:<5}|")
 print(f"|{num:^6}|")
+PI = 3.1415926
+print(f"{PI:.2f}")
