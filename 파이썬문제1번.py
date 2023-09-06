@@ -1,12 +1,12 @@
 # 1. 정해진 형식으로 시간을 입력 받아서 출력하기
 # 입력 형식 : 22:5:5 => 오후 10시 05분 05초
 
-hour, min, second = map(int ,input("시:분:초 입력 : ").split(":"))
+hour, minute, second = map(int ,input("시:분:초 입력 : ").split(":"))
 if(hour > 12):
     hour -= 12
-    print(f"오후 {hour}시 {min}분 {second}초 입니다.")
+    print(f"오후 {hour}시 {minute}분 {second}초 입니다.")
 else:
-    print(f"오전 {hour}시 {min}분 {second}초 입니다.")
+    print(f"오전 {hour}시 {minute}분 {second}초 입니다.")
 
 # # 2. 세 개의 정수를 받아서 최대값과 최소값 구하기
 num1,num2,num3 = map(int,input("3개의 정수 입력 : ").split())
