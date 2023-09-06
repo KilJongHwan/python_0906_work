@@ -1,17 +1,17 @@
 # 1. 정해진 형식으로 시간을 입력 받아서 출력하기
 # 입력 형식 : 22:5:5 => 오후 10시 05분 05초
 
-# hour, min, second = map(int ,input("시:분:초 입력 : ").split(":"))
-# if(hour > 12):
-#     hour -= 12
-#     print(f"오후 {hour}시 {min}분 {second}초 입니다.")
-# else:
-#     print(f"오전 {hour}시 {min}분 {second}초 입니다.")
+hour, min, second = map(int ,input("시:분:초 입력 : ").split(":"))
+if(hour > 12):
+    hour -= 12
+    print(f"오후 {hour}시 {min}분 {second}초 입니다.")
+else:
+    print(f"오전 {hour}시 {min}분 {second}초 입니다.")
 
 # # 2. 세 개의 정수를 받아서 최대값과 최소값 구하기
-# num1,num2,num3 = map(int,input("3개의 정수 입력 : ").split())
-# print(f"최대값 : {max(num1,num2,num3)}")
-# print(f"최소값 : {min(num1,num2,num3)}")
+num1,num2,num3 = map(int,input("3개의 정수 입력 : ").split())
+print(f"최대값 : {max(num1,num2,num3)}")
+print(f"최소값 : {min(num1,num2,num3)}")
 
 # 3. 주민등록번호를 입력받아 생년월일, 성별 ,나이 출력하기
 # 999999-1234567
@@ -35,8 +35,8 @@ print(f"""
 # 4. 갯수가 정해지지 않은 여러 개의 정수를 입력 받아 합계와 평균구하기
 # list 사용
 
-# list = list(map(int,input("값을 입력 하세요 : ").split()))
-# sumList = sum(list)
-# avList = sumList / len(list)
-# print(f"합계 : {sumList}")
-# print(f"평균 : {avList:.2f}")
+list = list(map(int,input("값을 입력 하세요 : ").split()))
+sumList = sum(list)
+avList = sumList / len(list)
+print(f"합계 : {sumList}")
+print(f"평균 : {avList:.2f}")
