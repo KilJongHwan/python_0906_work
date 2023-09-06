@@ -7,6 +7,7 @@
 #     print(f"오후 {hour}시 {min}분 {second}초 입니다.")
 # else:
 #     print(f"오전 {hour}시 {min}분 {second}초 입니다.")
+
 # # 2. 세 개의 정수를 받아서 최대값과 최소값 구하기
 # num1,num2,num3 = map(int,input("3개의 정수 입력 : ").split())
 # print(f"최대값 : {max(num1,num2,num3)}")
