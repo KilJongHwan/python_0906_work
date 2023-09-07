@@ -29,5 +29,4 @@ print(f"입력한 {timeStr} 시간급여는 {int(time * pay)}원 입니다.")
 
 s,k = input("문자열 2개 입력 : ").split()
 m = int(input("끼워 넣을 문자열 개수 입력 : "))
-insert = s[-m:]
-print(f"끼어넣은 결과는 {insert + k}입니다")
+print(f"끼어넣은 결과는 {s[-m:] + k}입니다")
