@@ -16,9 +16,9 @@ def input_age():
 def input_sex():
     while True:
         sex = input("성별을 입력 하세요 : ")
-        if sex == "m" or "M":
+        if sex == "m" or sex == "M":
             return "male"
-        elif sex == "f" or "F":
+        elif sex == "f" or sex == "F":
             return "female"
         else:
             print("회원정보를 잘못 입력하셧습니다 다시 입력해주세요")
