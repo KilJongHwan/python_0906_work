@@ -33,7 +33,7 @@ class Character(Unit):  # Unit을 상속
             self.isAlive = False
 
 # 스레드에서 실행할 함수
-def wizard_th(dummy):
+def wizard_th():
     print(f"{wizard.job}가 전투 준비를 완료 했습니다.")
     time.sleep(1)
     while True :
@@ -60,7 +60,7 @@ if __name__ == "__main__": # main thread 흐름을 타는 시작점
 
     warrior = Character(8, 2, 0.8, 0.5, 150, 40, name1) # 물공,마공, 물방, 마방, 물적,마적,체력,궁극기
     wizard = Character(2, 20, 0.5, 0.9, 60, 55, name2) # 물공,마공, 물방, 마방, 물적,마적,체력,궁극기
-    x = threading.Thread(target=wizard_th, args=(1,))
+    x = threading.Thread(target=wizard_th)
     print(f"{warrior.job}가 전투 준비를 완료 했습니다.")
     time.sleep(1)
     x.start() # 서브 스레드 시작
