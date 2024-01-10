@@ -10,7 +10,7 @@ import matplotlib.cm as cm
 model = ResNet50(weights = 'imagenet')
 model.summary()
 
-image_path = '/hummingbird.jpg'
+image_path = 'hummingbird.jpg'
 img = image.load_img(image_path, target_size=(244,244))
 plt.matshow(img)
 

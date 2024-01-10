@@ -32,4 +32,4 @@ def maxmin(*args):
     print(n)
     print(m)
 
- maxmin(3,50, 60, 100 , 34)
+maxmin(3,50, 60, 100 , 34)

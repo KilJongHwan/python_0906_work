@@ -1,7 +1,7 @@
 import os
 sp =  []
 fileName = "sample02.txt"
-newFile = open("myfile2.txt", 'w',encoding='utf8')
+newFile = open("myfile2.txt", 'w', encoding='utf8')
 def check(args):
     lines = args.readlines()
     for line in lines:
